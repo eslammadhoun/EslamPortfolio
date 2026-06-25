@@ -578,33 +578,14 @@
 
 
     .project-screenshots {
-      display: flex;
-      gap: 0.75rem;
-      overflow-x: auto;
-      padding: 0.5rem 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0.5rem;
       margin-bottom: 1rem;
-      scrollbar-width: thin;
-      scrollbar-color: var(--border) transparent;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .project-screenshots::-webkit-scrollbar {
-      height: 4px;
-    }
-
-    .project-screenshots::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    .project-screenshots::-webkit-scrollbar-thumb {
-      background: var(--border);
-      border-radius: 2px;
     }
 
     .project-screenshot {
-      flex-shrink: 0;
-      width: 140px;
-      border-radius: 12px;
+      border-radius: 10px;
       border: 2px solid var(--border);
       overflow: hidden;
       transition: border-color 0.3s, transform 0.3s;
@@ -623,8 +604,8 @@
     }
 
     @media (max-width: 768px) {
-      .project-screenshot {
-        width: 120px;
+      .project-screenshots {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
