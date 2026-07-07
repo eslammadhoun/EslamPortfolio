@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eslam R. Madhoun — Flutter Developer</title>
+  <title>Flutter Developer | Firebase & Scalable Mobile Applications</title>
   <meta name="description"
-    content="Flutter Developer based in Gaza, Palestine. Building production-ready cross-platform apps with Clean Architecture and BLoC state management.">
+    content="Flutter developer building reliable mobile applications with clean architecture, Firebase integration, APIs, payments, and performance-focused solutions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -210,7 +210,7 @@
 
     .hero-headline {
       font-family: var(--font-display);
-      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-size: 40px;
       font-weight: 700;
       line-height: 1.05;
       margin-bottom: 1.5rem;
@@ -467,6 +467,95 @@
       color: var(--success);
     }
 
+    /* SERVICES */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 20px rgba(92, 107, 192, 0.08);
+    }
+
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+
+    .service-card ul {
+      list-style: none;
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .service-card li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .service-card li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    /* DEVELOPMENT PROCESS */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .process-step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .process-step-number {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .process-step h3 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .process-step p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
 
     /* PROJECTS */
     .projects-grid {
@@ -964,6 +1053,7 @@
     <a href="#" class="nav-logo">E<span>M</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#journey">Experience</a></li>
@@ -994,13 +1084,14 @@
   <section class="hero" id="hero">
     <div class="hero-content">
       <p class="hero-name">Eslam R. Madhoun</p>
-      <h1 class="hero-headline">Flutter <span class="accent">Developer.</span></h1>
-      <p class="hero-sub">I build production-ready cross-platform apps with clean architecture, BLoC state management,
-        and obsessive attention to detail.</p>
-      <p class="hero-location">Based in Gaza, Palestine. Open to remote roles worldwide.</p>
+      <h1 class="hero-headline">I build <span class="accent">reliable Flutter apps</span> for growing businesses.</h1>
+      <p class="hero-sub">I help businesses launch and improve mobile applications with scalable architecture, smooth
+        user experiences, and reliable integrations for Firebase, APIs, and payments.</p>
+      <p class="hero-location">Based in Gaza, Palestine. Available for remote freelance projects and product
+        partnerships.</p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <a href="#contact" class="btn btn-secondary">Let's Build Your App</a>
         <a href="Eslam_Madhoun_CV.pdf" download class="btn btn-secondary">Download CV</a>
       </div>
     </div>
@@ -1023,35 +1114,69 @@
   <section id="about">
     <div class="fade-in">
       <p class="section-label">About</p>
-      <h2 class="section-title">From Gaza to Global-Ready Flutter Dev</h2>
+      <h2 class="section-title">Flutter development focused on real product outcomes</h2>
       <div class="about-text">
-        <p>I'm a Flutter developer based in Gaza, Palestine, currently studying Software Engineering at Al-Azhar
-          University. I've gone from learning Dart fundamentals to building production-level
-          applications with Clean Architecture, BLoC/Cubit state management, Firebase, REST APIs, and Stripe payments.
-        </p>
-        <p>I trained through the Flutter Development Program at Gaza Sky Geeks, where I focused on Dart fundamentals,
-          Flutter UI, and state management. What I built afterward wasn't tutorial projects — it was apps with real
-          architecture decisions: feature-first folder structures, Freezed sealed state unions, dual data source
-          separation (REST + Firestore), and documented performance optimizations.</p>
-        <p>I care deeply about the quality of what I ship. Not just whether it works, but whether it's maintainable,
-          testable, and understandable to another developer six months later.</p>
+        <p>I build maintainable Flutter applications that solve real product problems and support long-term growth. My
+          work is centered on turning ideas into production-ready mobile experiences that are reliable, easy to extend,
+          and pleasant to use.</p>
+        <p>Whether the goal is a new app, a feature rollout, or a stability fix, I focus on clean architecture,
+          thoughtful user flows, and dependable delivery. The aim is to create software that is easier to maintain and
+          easier for clients to grow.</p>
       </div>
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-value">Production-Ready</div>
-          <div class="stat-label">Building apps with real architecture from day one</div>
+          <div class="stat-value">Maintainable Apps</div>
+          <div class="stat-label">Built with scalable architecture from the start</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value">3+</div>
-          <div class="stat-label">Shipped Projects</div>
+          <div class="stat-value">Real Product Problems</div>
+          <div class="stat-label">Focused on user flows, reliability, and business value</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value">9 Sections</div>
-          <div class="stat-label">Formally assessed across 52+ interview questions</div>
+          <div class="stat-value">Firebase & APIs</div>
+          <div class="stat-label">Integrated services that support real app functionality</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value">Clean Architecture</div>
-          <div class="stat-label">Every project, no exceptions</div>
+          <div class="stat-value">Launch Ready</div>
+          <div class="stat-label">Prepared for deployment, testing, and release</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="fade-in">
+      <p class="section-label">Services</p>
+      <h2 class="section-title">What I Can Help You With</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Flutter App Development</h3>
+          <ul>
+            <li>Building Flutter mobile applications from Figma designs</li>
+            <li>Creating polished Android and iOS experiences</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>Bug Fixes & Feature Growth</h3>
+          <ul>
+            <li>Fixing Flutter bugs and crashes</li>
+            <li>Adding new features to existing Flutter apps</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>Backend & Integrations</h3>
+          <ul>
+            <li>Firebase integration and backend setup</li>
+            <li>REST API integration and third-party services</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>Payments & Release</h3>
+          <ul>
+            <li>Payment integration for secure transactions</li>
+            <li>App Store and Play Store deployment with performance optimization</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -1060,98 +1185,78 @@
   <!-- SKILLS -->
   <section id="skills">
     <div class="fade-in">
-      <p class="section-label">Technical Skills</p>
-      <h2 class="section-title">What I Work With</h2>
+      <p class="section-label">Skills</p>
+      <h2 class="section-title">Skills that support real product delivery</h2>
       <div class="skills-grid">
         <div class="skill-group">
-          <h3 class="skill-group-title">Flutter & Dart</h3>
+          <h3 class="skill-group-title">Mobile Development</h3>
           <div class="skill-tags">
-            <span class="skill-tag">Flutter</span>
-            <span class="skill-tag">Dart 3.x</span>
-            <span class="skill-tag">Flutter Web</span>
+            <span class="skill-tag">Flutter & Dart</span>
             <span class="skill-tag">Responsive UI</span>
-            <span class="skill-tag">flutter_screenutil</span>
-            <span class="skill-tag">flutter_native_splash</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3 class="skill-group-title">State Management</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">BLoC / Cubit</span>
-            <span class="skill-tag">Freezed</span>
-            <span class="skill-tag">Provider</span>
+            <span class="skill-tag">Android & iOS deployment</span>
           </div>
         </div>
         <div class="skill-group">
           <h3 class="skill-group-title">Architecture</h3>
           <div class="skill-tags">
             <span class="skill-tag">Clean Architecture</span>
-            <span class="skill-tag">Feature-First Structure</span>
-            <span class="skill-tag">SOLID Principles</span>
-            <span class="skill-tag">MVVM</span>
+            <span class="skill-tag">BLoC / Cubit</span>
+            <span class="skill-tag">Dependency Injection</span>
             <span class="skill-tag">Repository Pattern</span>
           </div>
         </div>
         <div class="skill-group">
-          <h3 class="skill-group-title">Networking & APIs</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Retrofit + Dio</span>
-            <span class="skill-tag">RESTful APIs</span>
-            <span class="skill-tag">JWT Authentication</span>
-            <span class="skill-tag">Interceptors</span>
-            <span class="skill-tag">Token Refresh</span>
-            <span class="skill-tag">Error Handling</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <h3 class="skill-group-title">Backend & Services</h3>
+          <h3 class="skill-group-title">Backend Integration</h3>
           <div class="skill-tags">
             <span class="skill-tag">Firebase</span>
-            <span class="skill-tag">Firestore</span>
-            <span class="skill-tag">Auth</span>
+            <span class="skill-tag">REST APIs</span>
             <span class="skill-tag">Cloud Functions</span>
-            <span class="skill-tag">Stripe</span>
-            <span class="skill-tag">Google Maps</span>
+            <span class="skill-tag">Authentication</span>
+            <span class="skill-tag">Payments</span>
           </div>
         </div>
         <div class="skill-group">
-          <h3 class="skill-group-title">Code Quality & DX</h3>
+          <h3 class="skill-group-title">Testing & Delivery</h3>
           <div class="skill-tags">
-            <span class="skill-tag">GetIt (DI)</span>
-            <span class="skill-tag">json_serializable</span>
-            <span class="skill-tag">build_runner</span>
-            <span class="skill-tag">flutter_secure_storage</span>
-            <span class="skill-tag">easy_localization</span>
-            <span class="skill-tag">pretty_dio_logger</span>
+            <span class="skill-tag">Debugging</span>
+            <span class="skill-tag">Performance Optimization</span>
+            <span class="skill-tag">App Release Process</span>
           </div>
         </div>
-        <div class="skill-group">
-          <h3 class="skill-group-title">Tools & Workflow</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Git / GitHub</span>
-            <span class="skill-tag">GitHub Actions</span>
-            <span class="skill-tag">Android Studio</span>
-            <span class="skill-tag">VS Code</span>
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">Multi-flavor builds</span>
-          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="fade-in">
+      <p class="section-label">Process</p>
+      <h2 class="section-title">My Development Process</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-step-number">01</div>
+          <h3>Understand requirements</h3>
+          <p>I clarify the product goals, target users, and key features before implementation begins.</p>
         </div>
-        <div class="skill-group">
-          <h3 class="skill-group-title">Also Proficient In</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Riverpod</span>
-            <span class="skill-tag">GoRouter</span>
-            <span class="skill-tag">Flutter Desktop</span>
-          </div>
+        <div class="process-step">
+          <div class="process-step-number">02</div>
+          <h3>Plan scalable architecture</h3>
+          <p>I structure the app in a way that supports growth, maintainability, and future enhancement.</p>
         </div>
-        <div class="skill-group">
-          <h3 class="skill-group-title">Testing</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Unit Testing</span>
-            <span class="skill-tag">Widget Testing</span>
-            <span class="skill-tag">Integration Testing</span>
-            <span class="skill-tag">Mockito</span>
-          </div>
+        <div class="process-step">
+          <div class="process-step-number">03</div>
+          <h3>Implement features</h3>
+          <p>I build the experience carefully, focusing on reliability, usability, and clean code.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-number">04</div>
+          <h3>Test and optimize</h3>
+          <p>I check for bugs, edge cases, performance issues, and release readiness throughout development.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step-number">05</div>
+          <h3>Prepare for production release</h3>
+          <p>I make sure the app is deployment-ready, with the right configurations and quality checks in place.</p>
         </div>
       </div>
     </div>
@@ -1174,21 +1279,16 @@
               <span class="badge highlight">Most Complex Project</span>
             </div>
           </div>
-          <p class="project-desc">A full-featured medical app connecting patients with doctors across 15+
-            specializations. Patients can browse by specialty, search and filter doctors, view detailed profiles with
-            reviews, book appointments with real-time slot selection, and communicate via a real-time Firebase Firestore
-            chat inbox.</p>
+          <p class="project-desc">A healthcare booking app that helps patients discover doctors, review profiles, book
+            appointments, and communicate with providers. The product needed to feel dependable for both patients and
+            medical staff while supporting future growth.</p>
           <div class="project-details">
-            <h4>What makes it technically serious:</h4>
+            <h4>Key challenges solved:</h4>
             <ul>
-              <li>Dual data architecture: REST API (via Retrofit + Dio) for medical data, Firebase Firestore for
-                real-time messaging — cleanly separated through the repository pattern</li>
-              <li>BLoC/Cubit with Freezed sealed state unions on every screen that fetches data</li>
-              <li>Multi-flavor builds: separate dev and prod entry points with independent configurations</li>
-              <li>Performance: RepaintBoundary on list items, BlocSelector scoping, memCacheWidth on cached images,
-                ListView.builder everywhere, debounced search</li>
-              <li>Secure JWT storage via flutter_secure_storage, never plain SharedPreferences</li>
-              <li>Feature-first Clean Architecture with full layer separation (Presentation/Domain/Data/Core)</li>
+              <li>Implemented scalable architecture for future growth and feature expansion.</li>
+              <li>Combined REST APIs with Firebase real-time messaging in a clean separation.</li>
+              <li>Optimized performance for search, list rendering, and image-heavy screens.</li>
+              <li>Built core user flows for doctor discovery, appointment booking, and chat.</li>
             </ul>
           </div>
           <div class="project-tech">
@@ -1206,12 +1306,24 @@
             <span class="tech-pill">Multi-flavor builds</span>
           </div>
           <div class="project-screenshots">
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/home.png" alt="Doc-doc Home Screen" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/doctorDetails.png" alt="Doctor Details" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/bookAppointment.png" alt="Book Appointment" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/chatConversation.png" alt="Chat Conversation" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/specialites.png" alt="Specializations" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/seearch.png" alt="Search Doctors" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/home.png"
+                alt="Doc-doc Home Screen" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/doctorDetails.png"
+                alt="Doctor Details" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/bookAppointment.png"
+                alt="Book Appointment" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/chatConversation.png"
+                alt="Chat Conversation" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/specialites.png"
+                alt="Specializations" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Doc-doc/master/screenshots/seearch.png"
+                alt="Search Doctors" loading="lazy"></div>
           </div>
           <a href="https://github.com/eslammadhoun/Doc-doc" target="_blank" rel="noopener" class="project-link">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -1232,16 +1344,16 @@
               <span class="badge highlight">Full-Featured</span>
             </div>
           </div>
-          <p class="project-desc">A production-oriented e-commerce app covering the full shopping experience: authentication, product discovery, category browsing, cart and checkout, wishlist management, notifications, and user profiles. Engineered with feature-first Clean Architecture and scalable state management.</p>
+          <p class="project-desc">A full-featured e-commerce app designed to support browsing, account access, cart
+            management, and checkout. The challenge was creating a smooth shopping experience while keeping the app
+            structure clean enough to scale.</p>
           <div class="project-details">
-            <h4>Technical highlights:</h4>
+            <h4>Key challenges solved:</h4>
             <ul>
-              <li>Feature-first Clean Architecture with full layer separation (Presentation/Domain/Data)</li>
-              <li>BLoC/Cubit state management with optimistic wishlist toggling and rollback on failure</li>
-              <li>GoRouter shell navigation with route graph, token refresh bootstrap, and auth guards</li>
-              <li>Dio client with interceptors, JWT token refresh, and unified error handling</li>
-              <li>SQLite (sqflite) for structured local persistence alongside SharedPreferences</li>
-              <li>Cached network images with flutter_cache_manager for performant image loading</li>
+              <li>Built end-to-end shopping flows for authentication, discovery, cart, and checkout.</li>
+              <li>Structured the app with scalable architecture and reliable state handling.</li>
+              <li>Integrated secure API requests, session handling, and resilient user interactions.</li>
+              <li>Improved reliability for wishlist actions and app navigation across key screens.</li>
             </ul>
           </div>
           <div class="project-tech">
@@ -1255,14 +1367,27 @@
             <span class="tech-pill">Clean Architecture</span>
           </div>
           <div class="project-screenshots">
-            <div class="project-screenshot"><img src="https://github.com/user-attachments/assets/8f8901dc-01b1-4ce1-827c-ccba2016f9c3" alt="Home Dashboard" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://github.com/user-attachments/assets/a6ecc5f1-2c46-4c12-a964-0246bf59437e" alt="Product Listing" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://github.com/user-attachments/assets/ba9509ad-af47-4792-8c43-d2cf2cd8420e" alt="Product Details" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://github.com/user-attachments/assets/b706e773-ee76-45e4-84b9-20c4598fb00e" alt="Cart & Checkout" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://github.com/user-attachments/assets/d60a1773-1410-4ce7-8f89-9c9973b8480b" alt="Wishlist" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://github.com/user-attachments/assets/496545b1-938a-4506-82a5-caea48246156" alt="Profile" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://github.com/user-attachments/assets/8f8901dc-01b1-4ce1-827c-ccba2016f9c3"
+                alt="Home Dashboard" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://github.com/user-attachments/assets/a6ecc5f1-2c46-4c12-a964-0246bf59437e"
+                alt="Product Listing" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://github.com/user-attachments/assets/ba9509ad-af47-4792-8c43-d2cf2cd8420e"
+                alt="Product Details" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://github.com/user-attachments/assets/b706e773-ee76-45e4-84b9-20c4598fb00e"
+                alt="Cart & Checkout" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://github.com/user-attachments/assets/d60a1773-1410-4ce7-8f89-9c9973b8480b" alt="Wishlist"
+                loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://github.com/user-attachments/assets/496545b1-938a-4506-82a5-caea48246156" alt="Profile"
+                loading="lazy"></div>
           </div>
-          <a href="https://github.com/eslammadhoun/E-Commerce-Evo-Shoping" target="_blank" rel="noopener" class="project-link">
+          <a href="https://github.com/eslammadhoun/E-Commerce-Evo-Shoping" target="_blank" rel="noopener"
+            class="project-link">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
@@ -1281,16 +1406,16 @@
               <span class="badge highlight">Clean Architecture</span>
             </div>
           </div>
-          <p class="project-desc">A production-ready e-commerce app covering the full shopping journey — onboarding, OAuth authentication, product discovery, wishlist, cart, real-time checkout with Stripe payments, saved delivery addresses with Google Maps routing, and order tracking. Built on Clean Architecture with Firebase as the backend.</p>
+          <p class="project-desc">An e-commerce app focused on secure checkout, saved addresses, and a dependable
+            payment experience. The goal was to make online purchasing feel straightforward while supporting multiple
+            authentication and payment options.</p>
           <div class="project-details">
-            <h4>Technical highlights:</h4>
+            <h4>Key challenges solved:</h4>
             <ul>
-              <li>Clean Architecture (Data · Domain · Presentation) with feature-first folder structure</li>
-              <li>Stripe integration — card tokenization, add new cards, multiple payment methods</li>
-              <li>Google Maps with Geolocator and flutter_polyline_points for delivery address visualization</li>
-              <li>OAuth: Google Sign-In and Facebook Login alongside email/password auth</li>
-              <li>OTP-based password reset with hashed code verification via Firebase Cloud Functions</li>
-              <li>firebase_remote_config for feature flags; session persistence via SharedPreferences</li>
+              <li>Implemented Stripe-based payments and flexible payment method management.</li>
+              <li>Built user flows for authentication, address management, and checkout.</li>
+              <li>Integrated Firebase backend services and geolocation-based delivery support.</li>
+              <li>Designed the application to remain maintainable as new features are added.</li>
             </ul>
           </div>
           <div class="project-tech">
@@ -1305,18 +1430,42 @@
             <span class="tech-pill">Facebook Auth</span>
           </div>
           <div class="project-screenshots">
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/splash.png" alt="Splash" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/onBoarding.png" alt="Onboarding" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/home.png" alt="Home" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/search.png" alt="Search" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/product-dietails.png" alt="Product Details" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/reviews.png" alt="Reviews" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/wishlist.png" alt="Wishlist" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/cart.png" alt="Cart" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/payment-methods.png" alt="Payment Methods" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/add-payment-card.png" alt="Add Payment Card" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/new-delivery-address.png" alt="Delivery Address with Map" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/checkout.png" alt="Checkout" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/splash.png" alt="Splash"
+                loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/onBoarding.png"
+                alt="Onboarding" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/home.png" alt="Home"
+                loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/search.png" alt="Search"
+                loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/product-dietails.png"
+                alt="Product Details" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/reviews.png" alt="Reviews"
+                loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/wishlist.png" alt="Wishlist"
+                loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/cart.png" alt="Cart"
+                loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/payment-methods.png"
+                alt="Payment Methods" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/add-payment-card.png"
+                alt="Add Payment Card" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/new-delivery-address.png"
+                alt="Delivery Address with Map" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/shopy/main/screenshots/checkout.png" alt="Checkout"
+                loading="lazy"></div>
           </div>
           <a href="https://github.com/eslammadhoun/shopy" target="_blank" rel="noopener" class="project-link">
             <svg viewBox="0 0 24 24" fill="currentColor">
@@ -1336,9 +1485,18 @@
               <span class="badge">Firebase</span>
             </div>
           </div>
-          <p class="project-desc">A full-featured grocery shopping app built with Flutter and Firebase. Features
-            real-time product browsing, cart management, favorites, and location-based delivery. Built as a deep dive
-            into Firebase-first architecture.</p>
+          <p class="project-desc">A grocery shopping app built around fast product discovery, cart management, and
+            delivery-oriented user flows. The work focused on making everyday shopping interactions simple, responsive,
+            and easy to maintain.</p>
+          <div class="project-details">
+            <h4>Key challenges solved:</h4>
+            <ul>
+              <li>Created a practical shopping experience for browsing, favorites, and checkout.</li>
+              <li>Integrated Firebase-backed data and user authentication for a smoother experience.</li>
+              <li>Built location-aware delivery features that fit the product's real use case.</li>
+              <li>Kept the app structure simple and scalable for future enhancements.</li>
+            </ul>
+          </div>
           <div class="project-tech">
             <span class="tech-pill">Flutter</span>
             <span class="tech-pill">Firebase</span>
@@ -1347,10 +1505,18 @@
             <span class="tech-pill">Location Services</span>
           </div>
           <div class="project-screenshots">
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Nectar-Groceries/main/screenshots/home.png" alt="Nectar Home Screen" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Nectar-Groceries/main/screenshots/product_details.png" alt="Product Details" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Nectar-Groceries/main/screenshots/cart.png" alt="Shopping Cart" loading="lazy"></div>
-            <div class="project-screenshot"><img src="https://raw.githubusercontent.com/eslammadhoun/Nectar-Groceries/main/screenshots/explore.png" alt="Explore Products" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Nectar-Groceries/main/screenshots/home.png"
+                alt="Nectar Home Screen" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Nectar-Groceries/main/screenshots/product_details.png"
+                alt="Product Details" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Nectar-Groceries/main/screenshots/cart.png"
+                alt="Shopping Cart" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="https://raw.githubusercontent.com/eslammadhoun/Nectar-Groceries/main/screenshots/explore.png"
+                alt="Explore Products" loading="lazy"></div>
           </div>
           <a href="https://github.com/eslammadhoun/Nectar-Groceries" target="_blank" rel="noopener"
             class="project-link">
@@ -1410,67 +1576,38 @@
   <!-- VERIFIED SKILLS -->
   <section id="verified">
     <div class="fade-in">
-      <p class="section-label">Verified Skills</p>
-      <h2 class="section-title">Assessed, Not Just Listed</h2>
-      <p class="verified-intro">Most developers list skills. I've had mine assessed through a comprehensive Flutter
-        developer evaluation — 9 sections, 52+ questions, covering exactly what interviewers ask for mid-to-senior
-        Flutter roles. Here's how I performed:</p>
+      <p class="section-label">Delivery Focus</p>
+      <h2 class="section-title">What clients can expect when working with me</h2>
+      <p class="verified-intro">I focus on clear communication, solid architecture, and reliable delivery from planning
+        through release. Each project is shaped around product goals, user experience, and maintainability.</p>
       <div class="verified-grid">
         <div class="verified-card">
           <div class="verified-card-header">
-            <h3 class="verified-card-name">State Management (BLoC/Cubit)</h3>
-            <span class="verified-card-level green">Expert</span>
+            <h3 class="verified-card-name">Clear planning</h3>
           </div>
-          <p class="verified-card-desc">Sealed state unions with Freezed, BlocSelector scoping, BlocProvider context
-            rules, and every edge case that trips up mid-level developers.</p>
+          <p class="verified-card-desc">Requirements are translated into practical app structure, user flows, and
+            implementation steps before development begins.</p>
         </div>
         <div class="verified-card">
           <div class="verified-card-header">
-            <h3 class="verified-card-name">Architecture (Clean Architecture)</h3>
-            <span class="verified-card-level green">Expert</span>
+            <h3 class="verified-card-name">Scalable implementation</h3>
           </div>
-          <p class="verified-card-desc">Feature-first folder structure, SOLID principles, Repository pattern, dependency
-            injection with GetIt — applied in every project I build, not just described.</p>
+          <p class="verified-card-desc">The app is built in a way that supports future growth, additional features, and
+            easier maintenance.</p>
         </div>
         <div class="verified-card">
           <div class="verified-card-header">
-            <h3 class="verified-card-name">Deployment & CI/CD</h3>
-            <span class="verified-card-level green">Expert</span>
+            <h3 class="verified-card-name">Reliable delivery</h3>
           </div>
-          <p class="verified-card-desc">APK vs AAB, app signing, Play Store publishing, GitHub Actions pipelines,
-            Firebase App Distribution, and staged rollouts. I've set this up in real projects.</p>
+          <p class="verified-card-desc">I prioritize testing, performance, and release readiness so the final product is
+            dependable.</p>
         </div>
         <div class="verified-card">
           <div class="verified-card-header">
-            <h3 class="verified-card-name">Networking & APIs</h3>
-            <span class="verified-card-level green">Senior</span>
+            <h3 class="verified-card-name">Practical integrations</h3>
           </div>
-          <p class="verified-card-desc">Retrofit + Dio, interceptors, JWT token refresh flows, unified error handling
-            with ApiResult&lt;T&gt;, pagination, REST vs WebSocket — implemented in production.</p>
-        </div>
-        <div class="verified-card">
-          <div class="verified-card-header">
-            <h3 class="verified-card-name">Performance Optimization</h3>
-            <span class="verified-card-level green">Senior</span>
-          </div>
-          <p class="verified-card-desc">RepaintBoundary, BlocSelector scoping, ListView.builder, memCacheWidth, const
-            constructors, and debounced inputs — I apply these by default, not as afterthoughts.</p>
-        </div>
-        <div class="verified-card">
-          <div class="verified-card-header">
-            <h3 class="verified-card-name">Firebase</h3>
-            <span class="verified-card-level green">Senior</span>
-          </div>
-          <p class="verified-card-desc">Auth, Firestore (real-time streams), Cloud Functions, Security Rules, Firebase
-            App Distribution. I've integrated both Firebase and REST in the same app.</p>
-        </div>
-        <div class="verified-card">
-          <div class="verified-card-header">
-            <h3 class="verified-card-name">Local Storage</h3>
-            <span class="verified-card-level green">Senior</span>
-          </div>
-          <p class="verified-card-desc">SharedPreferences for UI state, flutter_secure_storage for tokens, SQLite/Drift
-            for structured data — I know what to store where and why.</p>
+          <p class="verified-card-desc">Firebase, APIs, authentication, and payments are integrated in ways that support
+            the app's real use cases.</p>
         </div>
       </div>
     </div>
@@ -1481,8 +1618,9 @@
     <div class="fade-in">
       <p class="section-label">Contact</p>
       <h2 class="section-title">Let's Build Something</h2>
-      <p class="contact-text">I'm currently open to remote Flutter roles and freelance projects. If you're looking for a
-        Flutter developer who writes clean code, thinks architecturally, and ships real apps — let's talk.</p>
+      <p class="contact-text">I work with founders and businesses who need reliable Flutter applications, thoughtful
+        architecture, and a clear path from idea to launch. If you need a developer who can turn requirements into a
+        production-ready mobile product, let's talk.</p>
       <div class="contact-links">
         <a href="mailto:eslammadhoun3@gmail.com" class="contact-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1506,16 +1644,16 @@
           linkedin.com/in/eslam-madhoun-68210b355
         </a>
       </div>
-        <a href="Eslam_Madhoun_CV.pdf" download class="contact-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
-            <polyline points="7 10 12 15 17 10" />
-            <line x1="12" y1="15" x2="12" y2="3" />
-          </svg>
-          Download CV (PDF)
-        </a>
-      </div>
-      <div class="contact-availability">Available immediately. Time zone: GMT+3 (Gaza). Comfortable working async.</div>
+      <a href="Eslam_Madhoun_CV.pdf" download class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download CV (PDF)
+      </a>
+    </div>
+    <div class="contact-availability">Available immediately. Time zone: GMT+3 (Gaza). Comfortable working async.</div>
     </div>
   </section>
 
