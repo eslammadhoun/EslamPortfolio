@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flutter Developer | Firebase & Scalable Mobile Applications</title>
+  <title>Flutter &amp; AI Developer | On-Device AI and Scalable Mobile Applications</title>
   <meta name="description"
-    content="Flutter developer building reliable mobile applications with clean architecture, Firebase integration, APIs, payments, and performance-focused solutions.">
+    content="Flutter and AI developer building reliable mobile apps with on-device AI (fine-tuned LLMs, speech recognition), clean architecture, Firebase, APIs and payments.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -1084,9 +1084,10 @@
   <section class="hero" id="hero">
     <div class="hero-content">
       <p class="hero-name">Eslam R. Madhoun</p>
-      <h1 class="hero-headline">I build <span class="accent">reliable Flutter apps</span> for growing businesses.</h1>
+      <h1 class="hero-headline">I build <span class="accent">reliable Flutter apps</span> with on-device AI.</h1>
       <p class="hero-sub">I help businesses launch and improve mobile applications with scalable architecture, smooth
-        user experiences, and reliable integrations for Firebase, APIs, and payments.</p>
+        user experiences, and reliable integrations for Firebase, APIs, and payments. I also fine-tune AI models and
+        run them directly on the phone: private, offline, and with no server costs.</p>
       <p class="hero-location">Based in Gaza, Palestine. Available for remote freelance projects and product
         partnerships.</p>
       <div class="hero-ctas">
@@ -1114,11 +1115,15 @@
   <section id="about">
     <div class="fade-in">
       <p class="section-label">About</p>
-      <h2 class="section-title">Flutter development focused on real product outcomes</h2>
+      <h2 class="section-title">Flutter and AI development focused on real product outcomes</h2>
       <div class="about-text">
         <p>I build maintainable Flutter applications that solve real product problems and support long-term growth. My
           work is centered on turning ideas into production-ready mobile experiences that are reliable, easy to extend,
           and pleasant to use.</p>
+        <p>Recently I have taken that into AI. For <a href="#projects">Nutq</a> I fine-tuned a Gemma 3 1B model for Arabic
+          summarization, quantized it to 4-bit, and shipped it inside a Flutter app together with on-device speech
+          recognition. The app transcribes and summarizes audio, video and YouTube without sending anything to a
+          server.</p>
         <p>Whether the goal is a new app, a feature rollout, or a stability fix, I focus on clean architecture,
           thoughtful user flows, and dependable delivery. The aim is to create software that is easier to maintain and
           easier for clients to grow.</p>
@@ -1129,8 +1134,8 @@
           <div class="stat-label">Built with scalable architecture from the start</div>
         </div>
         <div class="stat-card">
-          <div class="stat-value">Real Product Problems</div>
-          <div class="stat-label">Focused on user flows, reliability, and business value</div>
+          <div class="stat-value">On-Device AI</div>
+          <div class="stat-label">Fine-tuned LLMs and speech recognition running inside the app</div>
         </div>
         <div class="stat-card">
           <div class="stat-value">Firebase & APIs</div>
@@ -1151,17 +1156,17 @@
       <h2 class="section-title">What I Can Help You With</h2>
       <div class="services-grid">
         <div class="service-card">
-          <h3>Flutter App Development</h3>
+          <h3>AI Features in Mobile Apps</h3>
           <ul>
-            <li>Building Flutter mobile applications from Figma designs</li>
-            <li>Creating polished Android and iOS experiences</li>
+            <li>Speech-to-text, summarization and other AI features that run on the device</li>
+            <li>Fine-tuning and optimizing models to fit a phone</li>
           </ul>
         </div>
         <div class="service-card">
-          <h3>Bug Fixes & Feature Growth</h3>
+          <h3>Flutter App Development</h3>
           <ul>
-            <li>Fixing Flutter bugs and crashes</li>
-            <li>Adding new features to existing Flutter apps</li>
+            <li>Building Flutter mobile applications from Figma designs</li>
+            <li>Fixing bugs and crashes, and adding features to existing apps</li>
           </ul>
         </div>
         <div class="service-card">
@@ -1216,11 +1221,32 @@
           </div>
         </div>
         <div class="skill-group">
+          <h3 class="skill-group-title">AI &amp; Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">On-device LLMs</span>
+            <span class="skill-tag">LLM Fine-tuning</span>
+            <span class="skill-tag">Model Quantization</span>
+            <span class="skill-tag">LiteRT-LM</span>
+            <span class="skill-tag">Speech-to-Text (ASR)</span>
+            <span class="skill-tag">Hugging Face</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Native &amp; Media</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Swift &amp; Kotlin platform channels</span>
+            <span class="skill-tag">FFmpeg</span>
+            <span class="skill-tag">Background processing</span>
+            <span class="skill-tag">Local database (Drift/SQLite)</span>
+          </div>
+        </div>
+        <div class="skill-group">
           <h3 class="skill-group-title">Testing & Delivery</h3>
           <div class="skill-tags">
             <span class="skill-tag">Debugging</span>
             <span class="skill-tag">Performance Optimization</span>
             <span class="skill-tag">App Release Process</span>
+            <span class="skill-tag">Automated tests &amp; CI</span>
           </div>
         </div>
       </div>
@@ -1268,6 +1294,93 @@
       <p class="section-label">Selected Work</p>
       <h2 class="section-title">Projects Built for Real Problems</h2>
       <div class="projects-grid">
+
+        <!-- Project: Nutq -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Nutq (نُطق)</h3>
+            <div class="project-badges">
+              <span class="badge">AI / Speech</span>
+              <span class="badge">iOS + Android</span>
+              <span class="badge highlight">On-Device AI</span>
+            </div>
+          </div>
+          <p class="project-desc">An Arabic and English transcription app that turns audio, video, YouTube links and
+            text into a transcript, then writes a summary with key takeaways. Both AI models run on the phone: no
+            server, no cloud API, so recordings stay private and the app works offline.</p>
+          <div class="project-details">
+            <h4>Key challenges solved:</h4>
+            <ul>
+              <li>Fine-tuned Gemma 3 1B for Arabic summarization, quantized to 4-bit and run on the phone with LiteRT-LM.</li>
+              <li>Built an on-device speech pipeline: FFmpeg audio extraction into Moonshine ASR, with a live transcript.</li>
+              <li>Cut the install size to ~96 MB by downloading the models on demand, with resume and SHA-256 checks.</li>
+              <li>Kept long jobs running in the background with Swift and Kotlin platform channels and progress notifications.</li>
+            </ul>
+          </div>
+          <div class="project-screenshot" style="margin-bottom: 1rem;"><img
+              src="nutq/pipeline.jpg" alt="Nutq on-device AI pipeline" loading="lazy"></div>
+          <div class="project-tech">
+            <span class="tech-pill">Flutter/Dart 3.x</span>
+            <span class="tech-pill">BLoC/Cubit</span>
+            <span class="tech-pill">Clean Architecture</span>
+            <span class="tech-pill">On-device LLM</span>
+            <span class="tech-pill">LLM Fine-tuning</span>
+            <span class="tech-pill">LiteRT-LM</span>
+            <span class="tech-pill">Moonshine ASR</span>
+            <span class="tech-pill">FFmpeg</span>
+            <span class="tech-pill">Drift/SQLite</span>
+            <span class="tech-pill">GetIt</span>
+            <span class="tech-pill">Freezed</span>
+            <span class="tech-pill">Swift + Kotlin channels</span>
+            <span class="tech-pill">Arabic RTL + English</span>
+            <span class="tech-pill">440+ tests · GitHub Actions</span>
+          </div>
+          <div class="project-screenshots">
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/onboarding.jpg"
+                alt="Nutq Onboarding" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/model-download.jpg"
+                alt="Nutq AI Model Download" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/home.jpg"
+                alt="Nutq Jobs History" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/new-job.jpg"
+                alt="Nutq New Job: Audio File" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/job-detail.jpg"
+                alt="Nutq Job Detail with AI Summary" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/settings.jpg"
+                alt="Nutq Settings" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/ar-home.jpg"
+                alt="Nutq Jobs History (Arabic, Dark)" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/ar-job-detail.jpg"
+                alt="Nutq Job Detail (Arabic, Dark)" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/ar-summary.jpg"
+                alt="Nutq AI Summary and Key Takeaways (Arabic, Dark)" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/ar-new-job.jpg"
+                alt="Nutq New Job (Arabic, Dark)" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/ar-alerts.jpg"
+                alt="Nutq Alerts (Arabic, Dark)" loading="lazy"></div>
+            <div class="project-screenshot"><img
+                src="nutq/screenshots/ar-settings.jpg"
+                alt="Nutq Settings (Arabic, Dark)" loading="lazy"></div>
+          </div>
+          <a href="https://github.com/eslammadhoun/nutq" target="_blank" rel="noopener" class="project-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            View on GitHub
+          </a>
+        </div>
 
         <!-- Project 1 -->
         <div class="project-card">
@@ -1568,6 +1681,13 @@
           <p class="timeline-desc">Built my most technically ambitious project: a medical appointment booking app with
             real-time Firebase chat, multi-flavor builds, performance-optimized lists, and dual-source architecture. The
             README documents the engineering decisions in full.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">2026</p>
+          <h3 class="timeline-title">Moved into AI: Built Nutq</h3>
+          <p class="timeline-desc">Fine-tuned Gemma 3 1B for Arabic summarization, published it on Hugging Face, and
+            shipped it inside a Flutter app with on-device speech recognition. Everything runs on the phone, with no
+            server, for iOS and Android.</p>
         </div>
       </div>
     </div>
