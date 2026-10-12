@@ -1128,8 +1128,8 @@
       <p class="hero-sub">I help businesses launch and improve mobile applications with scalable architecture, smooth
         user experiences, and reliable integrations for Firebase, APIs, and payments. I also fine-tune AI models and
         run them directly on the phone: private, offline, and with no server costs.</p>
-      <p class="hero-location">Based in Gaza, Palestine. Available for remote freelance projects and product
-        partnerships.</p>
+      <p class="hero-location">Based in Gaza, Palestine. Open to full-time roles (on-site or remote) and remote
+        freelance projects.</p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-secondary">Let's Build Your App</a>
@@ -1163,7 +1163,9 @@
         <p>Recently I have taken that into AI. For <a href="#projects">Nutq</a> I fine-tuned a Gemma 3 1B model for Arabic
           summarization, quantized it to 4-bit, and shipped it inside a Flutter app together with on-device speech
           recognition. The app transcribes and summarizes audio, video and YouTube without sending anything to a
-          server.</p>
+        server. Before that, I published a <a href="https://www.kaggle.com/code/eslammad3/whisper-ar-dialectal-v3small"
+        target="_blank" rel="noopener">Kaggle notebook</a> that fine-tunes Whisper on Arabic dialects using only a free
+        GPU. I'm especially interested in Arabic NLP and speech, where good tools are still rare.</p>
         <p>Whether the goal is a new app, a feature rollout, or a stability fix, I focus on clean architecture,
           thoughtful user flows, and dependable delivery. The aim is to create software that is easier to maintain and
           easier for clients to grow.</p>
@@ -1420,6 +1422,39 @@
             </svg>
             View on GitHub
           </a>
+          <a href="https://huggingface.co/EslamMad3/gemma3-1b-arabic-summarizer-litertlm" target="_blank" rel="noopener"
+            class="project-link">🤗 Model on Hugging Face</a>
+        </div>
+
+        <!-- Project: Whisper Arabic -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Whisper Fine-Tuning for Arabic Dialects</h3>
+            <div class="project-badges">
+              <span class="badge">AI / Speech</span>
+              <span class="badge highlight">Kaggle Notebook</span>
+            </div>
+          </div>
+          <p class="project-desc">A reproducible pipeline to fine-tune Whisper-Small for Arabic dialect speech
+            recognition on a free T4 GPU, documented step by step so anyone with limited hardware can run it.</p>
+          <div class="project-details">
+            <h4>What it covers:</h4>
+            <ul>
+              <li>Trains on 52k+ Arabic dialect clips with streaming data loading, so no tens of gigabytes of storage.</li>
+              <li>Arabic text normalization and automatic filtering by clip duration and token count.</li>
+              <li>Log-mel spectrograms computed on the fly to save memory, with settings that adapt to T4, L4 or A100.</li>
+              <li>WER and CER evaluation, keeping the best checkpoint by WER.</li>
+            </ul>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">Hugging Face Transformers</span>
+            <span class="tech-pill">Whisper</span>
+            <span class="tech-pill">Arabic ASR</span>
+            <span class="tech-pill">Kaggle</span>
+          </div>
+          <a href="https://www.kaggle.com/code/eslammad3/whisper-ar-dialectal-v3small" target="_blank" rel="noopener"
+            class="project-link">Open the notebook on Kaggle</a>
         </div>
 
         <!-- Project 1 -->
@@ -1698,15 +1733,15 @@
             independently — because I couldn't wait.</p>
         </div>
         <div class="timeline-item">
-          <p class="timeline-year">Early 2025</p>
+          <p class="timeline-year">May 2025 – Nov 2025</p>
           <h3 class="timeline-title">Gaza Sky Geeks Flutter Development Program</h3>
           <p class="timeline-desc">Completed an intensive Flutter training program focused on Dart fundamentals, Flutter
             UI architecture, and state management. This was where I went from learning Flutter to understanding it.</p>
         </div>
         <div class="timeline-item">
-          <p class="timeline-year">2025</p>
-          <h3 class="timeline-title">First Production Role: Junior Flutter Developer</h3>
-          <p class="timeline-desc">Joined as a Junior Flutter Developer. Responsible for implementing pixel-perfect
+          <p class="timeline-year">Mar 2025 – Mar 2026</p>
+          <h3 class="timeline-title">First Production Role: Junior Flutter Developer at TS2G</h3>
+          <p class="timeline-desc">Joined TS2G as a Junior Flutter Developer. Responsible for implementing pixel-perfect
             responsive UIs from Figma designs, applying SOLID Principles and Clean Architecture from day one.</p>
         </div>
         <div class="timeline-item">
@@ -1716,14 +1751,20 @@
             Gateway into production applications. First real experience with dual data source architecture.</p>
         </div>
         <div class="timeline-item">
-          <p class="timeline-year">2025</p>
-          <h3 class="timeline-title">Built Doc-doc (Flagship Project)</h3>
+          <p class="timeline-year">May 2026</p>
+          <h3 class="timeline-title">Built Doc-doc</h3>
           <p class="timeline-desc">Built my most technically ambitious project: a medical appointment booking app with
             real-time Firebase chat, multi-flavor builds, performance-optimized lists, and dual-source architecture. The
             README documents the engineering decisions in full.</p>
         </div>
         <div class="timeline-item">
-          <p class="timeline-year">2026</p>
+          <p class="timeline-year">Jul 2026</p>
+          <h3 class="timeline-title">Fine-tuned Whisper for Arabic Dialects</h3>
+          <p class="timeline-desc">Published a step-by-step Kaggle notebook that fine-tunes Whisper-Small on 52k+ Arabic
+            dialect clips using only a free T4 GPU, so any student or researcher can reproduce it.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">Aug 2026 – Oct 2026</p>
           <h3 class="timeline-title">Moved into AI: Built Nutq</h3>
           <p class="timeline-desc">Fine-tuned Gemma 3 1B for Arabic summarization, published it on Hugging Face, and
             shipped it inside a Flutter app with on-device speech recognition. Everything runs on the phone, with no
@@ -1778,9 +1819,9 @@
     <div class="fade-in">
       <p class="section-label">Contact</p>
       <h2 class="section-title">Let's Build Something</h2>
-      <p class="contact-text">I work with founders and businesses who need reliable Flutter applications, thoughtful
-        architecture, and a clear path from idea to launch. If you need a developer who can turn requirements into a
-        production-ready mobile product, let's talk.</p>
+      <p class="contact-text">I'm open to full-time Flutter and mobile AI roles, and to remote freelance projects for
+        founders and businesses. If your team needs a developer who can turn requirements into a production-ready
+        mobile product, with AI that runs fast and privately on the phone, let's talk.</p>
       <div class="contact-links">
         <a href="mailto:eslammadhoun3@gmail.com" class="contact-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1802,6 +1843,12 @@
               d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
           </svg>
           linkedin.com/in/eslam-madhoun-68210b355
+        </a>
+        <a href="https://huggingface.co/EslamMad3" target="_blank" rel="noopener" class="contact-link">
+          🤗 huggingface.co/EslamMad3
+        </a>
+        <a href="https://www.kaggle.com/eslammad3" target="_blank" rel="noopener" class="contact-link">
+          Kaggle: eslammad3
         </a>
       </div>
       <a href="Eslam_Madhoun_CV.pdf" download class="contact-link">
